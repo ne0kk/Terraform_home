@@ -56,6 +56,7 @@ keep_locally = true
 Данный ключ указывает на то что образ не будет удалятся при ничтожении проекта. 
 
 Из документации
+
 keep_locally (Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy operation.
 
 
