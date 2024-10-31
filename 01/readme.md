@@ -74,6 +74,11 @@ keep_locally (Boolean) If true, then the Docker image won't be deleted on destro
       - MYSQL_ROOT_HOST="%"
 Зайдите на вашу ВМ , подключитесь к контейнеру и проверьте наличие секретных env-переменных с помощью команды env. Запишите ваш финальный код в репозиторий.
 
+![image](https://github.com/user-attachments/assets/9c0fa619-ab7b-493d-a355-f03dfb14a7e0)
+
+![image](https://github.com/user-attachments/assets/09e57f12-86a5-4c23-b779-140f16caa0ba)
+
+![image](https://github.com/user-attachments/assets/cfc7be20-0b28-4b5c-83d6-fcf40681d51a)
 
 ------
 # Задание 3*
