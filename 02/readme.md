@@ -76,12 +76,18 @@
 1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
      
    Ответ:
+   ![image](https://github.com/user-attachments/assets/ee6fc9b5-4536-4064-b23f-311085e54613)
+
 3. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: **"netology-develop-platform-db"** ,  ```cores  = 2, memory = 2, core_fraction = 20```. Объявите её переменные с префиксом **vm_db_** в том же файле ('vms_platform.tf').  ВМ должна работать в зоне "ru-central1-b"
     
-   Ответ: 
+   Ответ:
+ ![image](https://github.com/user-attachments/assets/73cd6000-243e-436d-996b-87000c4204c0)
+  
 5. Примените изменения.
      
    Ответ:
+![image](https://github.com/user-attachments/assets/68a9ee96-bd36-4eaf-aec8-f5b94a4d874a)
+![image](https://github.com/user-attachments/assets/5f6ba33d-4b0d-4ac4-a586-39829ec3b7f1)
 
 
 ### Задание 4
