@@ -35,6 +35,7 @@
    Примечание: К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: ```"ssh ubuntu@vm_ip_address"```. Предварительно убедитесь, что ваш ключ добавлен в ssh-агент: ```eval $(ssh-agent) && ssh-add``` Вы познакомитесь с тем как при создании ВМ создать своего пользователя в блоке metadata в следующей лекции.;
 
    Ответ:
+   
 ![image](https://github.com/user-attachments/assets/859abfec-5b7f-4b41-8d42-9fc82a73ffa3)
 ![image](https://github.com/user-attachments/assets/24989e34-b8b0-4d3c-83a8-405710a255af)
 
@@ -63,11 +64,13 @@
 3. Объявите нужные переменные в файле variables.tf, обязательно указывайте тип переменной. Заполните их **default** прежними значениями из main.tf.
      
    Ответ:
+   
    ![image](https://github.com/user-attachments/assets/00d74d08-5e72-41ac-9667-22cfbd4337c9)
 
 5. Проверьте terraform plan. Изменений быть не должно.
      A
    Ответ:
+   
 ![image](https://github.com/user-attachments/assets/1d230f96-d68e-440f-aa1c-1814663642ca)
 
 
@@ -76,16 +79,19 @@
 1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
      
    Ответ:
+   
    ![image](https://github.com/user-attachments/assets/ee6fc9b5-4536-4064-b23f-311085e54613)
 
 3. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: **"netology-develop-platform-db"** ,  ```cores  = 2, memory = 2, core_fraction = 20```. Объявите её переменные с префиксом **vm_db_** в том же файле ('vms_platform.tf').  ВМ должна работать в зоне "ru-central1-b"
     
    Ответ:
+   
  ![image](https://github.com/user-attachments/assets/73cd6000-243e-436d-996b-87000c4204c0)
   
 5. Примените изменения.
      
    Ответ:
+   
 ![image](https://github.com/user-attachments/assets/68a9ee96-bd36-4eaf-aec8-f5b94a4d874a)
 ![image](https://github.com/user-attachments/assets/5f6ba33d-4b0d-4ac4-a586-39829ec3b7f1)
 
@@ -95,9 +101,14 @@
 1. Объявите в файле outputs.tf **один** output , содержащий: instance_name, external_ip, fqdn для каждой из ВМ в удобном лично для вас формате.(без хардкода!!!)
      
    Ответ:
+
+   ![image](https://github.com/user-attachments/assets/07fe3a03-4d0e-4cef-9802-5e403d37c695)
+
 3. Примените изменения.
      
    Ответ:
+   
+![image](https://github.com/user-attachments/assets/3dec012e-41bb-4edd-9477-feb8a60bbb17)
 
 В качестве решения приложите вывод значений ip-адресов команды ```terraform output```.
 
