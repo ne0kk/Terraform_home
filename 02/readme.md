@@ -198,9 +198,26 @@
 Изучите содержимое файла console.tf. Откройте terraform console, выполните следующие задания: 
 
 1. Напишите, какой командой можно отобразить **второй** элемент списка test_list.
-2. Найдите длину списка test_list с помощью функции length(<имя переменной>).
-3. Напишите, какой командой можно отобразить значение ключа admin из map test_map.
-4. Напишите interpolation-выражение, результатом которого будет: "John is admin for production server based on OS ubuntu-20-04 with X vcpu, Y ram and Z virtual disks", используйте данные из переменных test_list, test_map, servers и функцию length() для подстановки значений.
+     
+   Ответ:
+![image](https://github.com/user-attachments/assets/068a1e60-5a53-4516-adc3-8c4dc13dd84e)
+
+3. Найдите длину списка test_list с помощью функции length(<имя переменной>).
+     
+   Ответ:
+![image](https://github.com/user-attachments/assets/acfbfcb9-bad7-420c-98c6-ce4706248689)
+
+5. Напишите, какой командой можно отобразить значение ключа admin из map test_map.
+      
+   Ответ:
+   ![image](https://github.com/user-attachments/assets/841c810d-2c27-48ce-b9cc-611c11362bac)
+
+7. Напишите interpolation-выражение, результатом которого будет: "John is admin for production server based on OS ubuntu-20-04 with X vcpu, Y ram and Z virtual disks", используйте данные из переменных test_list, test_map, servers и функцию length() для подстановки значений.
+      
+   Ответ:
+"${local.test_map.admin} is ${keys(local.test_map)[0]} for ${keys(local.servers)[1]} server based on OS ${local.servers.production.image} with ${local.servers.production.cpu} vcpu, ${local.servers.production.ram} RAM and ${length(local.servers.production.disks)} virtual disks"
+
+![image](https://github.com/user-attachments/assets/d23082ee-532f-4c2e-97f0-b619a6b251b2)
 
 **Примечание**: если не догадаетесь как вычленить слово "admin", погуглите: "terraform get keys of map"
 
@@ -232,16 +249,22 @@ test = [
   },
 ]
 ```
+![image](https://github.com/user-attachments/assets/58eb35a4-65be-437a-b1b9-6c25d90a4f56)
+
+
+
 2. Напишите выражение в terraform console, которое позволит вычленить строку "ssh -o 'StrictHostKeyChecking=no' ubuntu@62.84.124.117" из этой переменной.
-------
+![image](https://github.com/user-attachments/assets/15c340ea-c04a-4e03-a322-63db67879b4e)
 
 ------
 
-### Задание 9*
+### Задание 9* Буду выполнять позже. 
 
 Используя инструкцию https://cloud.yandex.ru/ru/docs/vpc/operations/create-nat-gateway#tf_1, настройте для ваших ВМ nat_gateway. Для проверки уберите внешний IP адрес (nat=false) у ваших ВМ и проверьте доступ в интернет с ВМ, подключившись к ней через serial console. Для подключения предварительно через ssh измените пароль пользователя: ```sudo passwd ubuntu```
 
-### Правила приёма работыДля подключения предварительно через ssh измените пароль пользователя: sudo passwd ubuntu
+
+
+### Правила приёма работы
 В качестве результата прикрепите ссылку на MD файл с описанием выполненой работы в вашем репозитории. Так же в репозитории должен присутсвовать ваш финальный код проекта.
 
 **Важно. Удалите все созданные ресурсы**.
