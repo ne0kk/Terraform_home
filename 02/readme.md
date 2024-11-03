@@ -159,6 +159,9 @@
    ```
      
    Ответ:
+
+   ![image](https://github.com/user-attachments/assets/a81be811-1c8d-4ed4-9ed1-36ca804501a5)
+
 3. Создайте и используйте отдельную map(object) переменную для блока metadata, она должна быть общая для всех ваших ВМ.
    ```
    пример из terraform.tfvars:
@@ -169,13 +172,20 @@
    ```  
     
    Ответ:
-   
+
+   ![image](https://github.com/user-attachments/assets/a02912cb-b43b-4373-998f-87049fb0a072)
+
 5. Найдите и закоментируйте все, более не используемые переменные проекта.
     
    Ответ:
+
+   ![image](https://github.com/user-attachments/assets/5a906cee-d3d8-408c-9410-831bed56f4ac)
+
 7. Проверьте terraform plan. Изменений быть не должно.
      
    Ответ:
+
+![image](https://github.com/user-attachments/assets/5dfa302a-01df-4c5b-a85f-3db295fd34d1)
 
 ------
 
