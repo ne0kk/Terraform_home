@@ -9,6 +9,9 @@
 3. Инициализируйте проект, выполните код. Он выполнится, даже если доступа к preview нет.
 
 ## Ответ:
+![image](https://github.com/user-attachments/assets/97303761-a7c1-4b07-acbb-f18880d2d1c3)
+![image](https://github.com/user-attachments/assets/4e8e50a8-9c2d-4aa2-91ed-b35b804a9e89)
+
 
 ------
 
