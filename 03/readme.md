@@ -205,6 +205,8 @@ ${i["name"]} ansible_host=${i["network_interface"][0]["nat_ip_address"] platform
 ```
 
 ## Ответ:
+Лишний пробел и скобка } последня в строчке не на своем месте
+![image](https://github.com/user-attachments/assets/5ce753d0-3469-45cc-af77-ce9064eb537b)
 
 ------
 ### Задание 9* (необязательное)
