@@ -31,9 +31,16 @@ variable "vpc_name" {
   description = "VPC network&subnet name"
 }
 
-###common vars
+#Блок образа
+variable "vm_web_name_image" {
+  default     = "ubuntu-2004-lts"
+  #description = "VPC network & subnet name"
+}
 
-
+variable "image_family" {
+  type    = string
+  default = "ubuntu-2004-lts"
+}
 
 ###example vm_web var
 variable "vm_web_name" {

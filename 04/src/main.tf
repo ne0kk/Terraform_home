@@ -1,13 +1,17 @@
 
+data "yandex_compute_image" "ubuntu" {
+  family = var.vm_web_name_image
+}
+
 module "marketing" {
   source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
   env_name       = "develop" 
   network_id     = module.vpc_module.network_ids[0]
-  subnet_zones   = ["ru-central1-a"]
+  subnet_zones   = [var.default_zone]
   subnet_ids     = module.vpc_module.subnet_id
   instance_name  = "webs"
   instance_count = 2
-  image_family   = "ubuntu-2004-lts"
+  image_family   = var.image_family
   public_ip      = true
 
   labels = { 
@@ -26,11 +30,11 @@ module "analytics" {
   source         = "/home/user02/GIT/04/src/modules/analytics/"
   env_name       = "stage"
   network_id     = module.vpc_module.network_ids[0]
-  subnet_zones   = ["ru-central1-a"]
+  subnet_zones   = [var.default_zone]
   subnet_ids     = module.vpc_module.subnet_id
   instance_name  = "web-stage"
   instance_count = 1
-  image_family   = "ubuntu-2004-lts"
+  image_family   = var.image_family
   public_ip      = true
 
   metadata = {
