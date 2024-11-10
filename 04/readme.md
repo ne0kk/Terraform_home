@@ -60,10 +60,29 @@
 
 ### Задание 3
 1. Выведите список ресурсов в стейте.
+![image](https://github.com/user-attachments/assets/c21cc1dd-2039-483f-951a-56bb2c26deb1)
+
+
 2. Полностью удалите из стейта модуль vpc.
+
+![image](https://github.com/user-attachments/assets/0d479f2e-0b1d-43c4-a6ea-2d36edc9b838)
+
+
+
 3. Полностью удалите из стейта модуль vm.
+
+![image](https://github.com/user-attachments/assets/0bf7fcdc-133e-43ea-9917-db49e667ba85)
+
+
 4. Импортируйте всё обратно. Проверьте terraform plan. Значимых(!!) изменений быть не должно.
 Приложите список выполненных команд и скриншоты процессы.
+![image](https://github.com/user-attachments/assets/880ae770-6b29-4b54-8f14-34ea7f42690d)
+![image](https://github.com/user-attachments/assets/3e8d4f3e-0aa5-47fb-bb3e-34893ada848d)
+![image](https://github.com/user-attachments/assets/84149c89-170f-4d37-a8ed-50208a901bee)
+![image](https://github.com/user-attachments/assets/dd9c2b23-e829-4713-b011-1b0db92e3f36)
+![image](https://github.com/user-attachments/assets/d1fd8922-9e35-4133-8fea-bbd117624b3e)
+![image](https://github.com/user-attachments/assets/7e0c64f6-5b75-4365-a464-a4e1cbc205df)
+![image](https://github.com/user-attachments/assets/808ad6fb-9e38-439c-a276-0f42f3b5481e)
 
 
 
