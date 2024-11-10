@@ -1,0 +1,25 @@
+#cloud-config
+users:
+  - name: ubuntu
+    groups: sudo
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh_authorized_keys:
+           - ${ssh}
+package_update: true
+package_upgrade: false
+packages:
+  - vim
+write_files:
+  - path: "/usr/local/etc/startup.sh"
+    permissions: "755"
+    content: |
+      #!/bin/bash
+
+      apt-get update
+      apt-get install -y nginx
+      service nginx start
+      sed -i -- "s/nginx/Yandex Cloud - test /" /var/www/html/index.nginx-ubuntu.html
+    defer: true
+runcmd:
+  - ["/usr/local/etc/startup.sh"]
